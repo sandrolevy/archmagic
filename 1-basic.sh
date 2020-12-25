@@ -55,11 +55,37 @@ PKGS=(
         'gsfonts'               # Adobe Postscript replacement fonts
         'hplip'                 # HP Drivers
         'system-config-printer' # Printer setup  utility
+        
+   # ---- Yay
+   'base-devel'
 )
 
 for PKG in "${PKGS[@]}"; do
     echo "INSTALLING: ${PKG}"
     sudo pacman -S "$PKG" --noconfirm --needed
 done
+
+echo -e "\nINSTALLING LY LOGIN MANAGER SOFTWARE\n"
+
+cd "${HOME}"
+
+echo "CLOING: YAY"
+git clone "https://aur.archlinux.org/yay.git"
+
+
+PKGS=(
+
+    'ly'
+)
+
+
+cd ${HOME}/yay
+makepkg -si
+
+for PKG in "${PKGS[@]}"; do
+    yay -S --noconfirm $PKG
+done
+
+sudo systemctl enable ly.service
 
 echo -e "\nDone!\n"
