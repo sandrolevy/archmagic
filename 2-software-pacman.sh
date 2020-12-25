@@ -37,7 +37,8 @@ PKGS=(
     'ntfs-3g'               # Open source implementation of NTFS file system
 
     # GENERAL UTILITIES ---------------------------------------------------
-
+    'vivaldi'               # My favorite browser
+    
     # DEVELOPMENT ---------------------------------------------------------
     'code'                  # Visual Studio Code
     'python'                # Scripting language
