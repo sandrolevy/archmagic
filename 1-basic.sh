@@ -25,7 +25,8 @@ PKGS=(
 
     # --- Login Display Manager
         'ly'                    # Base Login Manager
-
+        'make'
+        
     # --- Networking Setup
         'wpa_supplicant'            # Key negotiation for WPA wireless networks
         'dialog'                    # Enables shell scripts to trigger dialog box
