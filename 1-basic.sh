@@ -22,6 +22,7 @@ PKGS=(
         'xclip'                 # System Clipboard
         'gnome-polkit'          # Elevate Applications
         'lxappearance'          # Set System Themes
+        'nitrogen'              # Wallpaper Manager
 
     # --- Login Display Manager
         'ly'                    # Base Login Manager
