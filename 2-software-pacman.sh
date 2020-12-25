@@ -38,12 +38,15 @@ PKGS=(
 
     # GENERAL UTILITIES ---------------------------------------------------
     'vivaldi'               # My favorite browser
+    'vifm'                  # TUI File Manager
     
     # DEVELOPMENT ---------------------------------------------------------
     'code'                  # Visual Studio Code
+    'emacs'
     'python'                # Scripting language
 
     # MEDIA ---------------------------------------------------------------
+    'cmus'
     
     # GRAPHICS AND DESIGN -------------------------------------------------
 
