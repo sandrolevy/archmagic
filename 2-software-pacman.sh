@@ -7,6 +7,7 @@ PKGS=(
     # SYSTEM --------------------------------------------------------------
 
     'linux-lts'             # Long term support kernel
+    'base-devel'            # Allow make packpages
 
     # TERMINAL UTILITIES --------------------------------------------------
 
@@ -34,8 +35,8 @@ PKGS=(
     'vifm'                  # TUI File Manager
     
     # DEVELOPMENT ---------------------------------------------------------
-    'code'                  # Visual Studio Code - Verificar
-    'emacs'
+    'code'                  # Visual Studio Code
+    'emacs'                 # Text Editor
     'python'                # Scripting language
 
     # MEDIA ---------------------------------------------------------------
