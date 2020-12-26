@@ -21,6 +21,7 @@ PKGS=(
         'gnome-polkit'          # Elevate Applications
         'lxappearance'          # Set System Themes
         'nitrogen'              # Wallpaper Manager
+        'gnome-control-center'
 
     # --- Login Display Manager
         'gdm'                    # Base Login Manager
