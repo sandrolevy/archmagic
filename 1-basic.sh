@@ -40,51 +40,9 @@ PKGS=(
         'pulseaudio-alsa'   # ALSA configuration for pulse audio
         'pavucontrol'       # Pulse Audio volume control
         'pnmixer'           # System tray volume control
-
-    # --- Bluetooth
-        'bluez'                 # Daemons for the bluetooth protocol stack
-        'bluez-utils'           # Bluetooth development and debugging utilities
-        'bluez-firmware'        # Firmwares for Broadcom BCM203x and STLC2300 Bluetooth chips
-        'blueberry'             # Bluetooth configuration tool
         'pulseaudio-bluetooth'  # Bluetooth support for PulseAudio
-    
-    # --- Printers
-        'cups'                  # Open source printer drivers
-        'cups-pdf'              # PDF support for cups
-        'ghostscript'           # PostScript interpreter
-        'gsfonts'               # Adobe Postscript replacement fonts
-        'hplip'                 # HP Drivers
-        'system-config-printer' # Printer setup  utility
-        
-   # ---- Yay
-   'base-devel'
 )
 
-for PKG in "${PKGS[@]}"; do
-    echo "INSTALLING: ${PKG}"
-    sudo pacman -S "$PKG" --noconfirm --needed
-done
-
-echo -e "\nINSTALLING LY LOGIN MANAGER SOFTWARE\n"
-
-cd "${HOME}"
-
-echo "CLOING: YAY"
-git clone "https://aur.archlinux.org/yay.git"
-
-
-PKGS=(
-
-    'ly'
-)
-
-
-cd ${HOME}/yay
-makepkg -si
-
-for PKG in "${PKGS[@]}"; do
-    yay -S --noconfirm $PKG
-done
 
 sudo systemctl enable gdm
 
