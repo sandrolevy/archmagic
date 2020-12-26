@@ -35,6 +35,10 @@ PKGS=(
         'pulseaudio-bluetooth'  # Bluetooth support for PulseAudio
 )
 
+for PKG in "${PKGS[@]}"; do
+    echo "INSTALLING: ${PKG}"
+    sudo pacman -S "$PKG" --noconfirm --needed
+done
 
 sudo systemctl enable gdm
 
