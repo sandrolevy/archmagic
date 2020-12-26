@@ -6,26 +6,18 @@ PKGS=(
 
     # --- XORG Display Rendering
         'xorg'                  # Base Package
-        'xorg-drivers'          # Display Drivers 
         'termite'               # Terminal for TTY
-        'xorg-server'           # XOrg server
-        'xorg-apps'             # XOrg apps group
-        'xorg-xinit'            # XOrg init
-        'xorg-xinput'           # Xorg xinput
 
     # --- Setup Desktop
         'awesome'               # Awesome Desktop
         'dmenu'                 # Menu System
         'picom'                 # Translucent Windows
-        'xclip'                 # System Clipboard
         'gnome-polkit'          # Elevate Applications
-        'lxappearance'          # Set System Themes
         'nitrogen'              # Wallpaper Manager
-        'gnome-control-center'
+        'gnome-control-center'  # Control Center
 
     # --- Login Display Manager
         'gdm'                    # Base Login Manager
-        'make'
         
     # --- Networking Setup
         'wpa_supplicant'            # Key negotiation for WPA wireless networks
