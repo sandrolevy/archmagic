@@ -12,11 +12,9 @@ PKGS=(
         'xorg-apps'             # XOrg apps group
         'xorg-xinit'            # XOrg init
         'xorg-xinput'           # Xorg xinput
-        'mesa'                  # Open source version of OpenGL
 
     # --- Setup Desktop
         'awesome'               # Awesome Desktop
-        'xfce4-power-manager'   # Power Manager 
         'dmenu'                 # Menu System
         'picom'                 # Translucent Windows
         'xclip'                 # System Clipboard
@@ -25,7 +23,7 @@ PKGS=(
         'nitrogen'              # Wallpaper Manager
 
     # --- Login Display Manager
-        'ly'                    # Base Login Manager
+        'gdm'                    # Base Login Manager
         'make'
         
     # --- Networking Setup
