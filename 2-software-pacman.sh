@@ -28,20 +28,13 @@ PKGS=(
     # DISK UTILITIES ------------------------------------------------------
 
     'adb'                   # ADB for Android
-    'autofs'                # Auto-mounter
-    'dosfstools'            # DOS Support
-    'exfat-utils'           # Mount exFat drives
-    'gparted'               # Disk utility
-    'gvfs-mtp'              # Read MTP Connected Systems
-    'gvfs-smb'              # More File System Stuff
-    'ntfs-3g'               # Open source implementation of NTFS file system
 
     # GENERAL UTILITIES ---------------------------------------------------
     'vivaldi'               # My favorite browser
     'vifm'                  # TUI File Manager
     
     # DEVELOPMENT ---------------------------------------------------------
-    'code'                  # Visual Studio Code
+    'code'                  # Visual Studio Code - Verificar
     'emacs'
     'python'                # Scripting language
 
