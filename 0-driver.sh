@@ -18,6 +18,9 @@ PKGS=(
     # BUMBLEBEE ------------------------------------------------------
     'bumblebee'
     'bbswitch'
+    
+    # TOUCHPAD ------------------------------------------------------
+    'xf86-input-libinput'
 )
 
 for PKG in "${PKGS[@]}"; do
