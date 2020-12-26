@@ -17,6 +17,10 @@ sudo systemctl enable ly.service
 
 sudo cp ./30-touchpad.conf /etc/X11/xorg.conf.d/
 
+amixer sset Master unmute
+amixer sset Speaker unmute
+amixer sset Headphone unmute
+
 echo "
 ###############################################################################
 # Done
