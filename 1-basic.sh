@@ -14,10 +14,6 @@ PKGS=(
         'picom'                 # Translucent Windows
         'gnome-polkit'          # Elevate Applications
         'nitrogen'              # Wallpaper Manager
-        'gnome-control-center'  # Control Center
-
-    # --- Login Display Manager
-        'gdm'                    # Base Login Manager
         
     # --- Networking Setup
         'wpa_supplicant'            # Key negotiation for WPA wireless networks
@@ -39,7 +35,5 @@ for PKG in "${PKGS[@]}"; do
     echo "INSTALLING: ${PKG}"
     sudo pacman -S "$PKG" --noconfirm --needed
 done
-
-sudo systemctl enable gdm
 
 echo -e "\nDone!\n"
