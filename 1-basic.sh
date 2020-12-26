@@ -85,6 +85,6 @@ for PKG in "${PKGS[@]}"; do
     yay -S --noconfirm $PKG
 done
 
-sudo systemctl enable ly.service
+sudo systemctl enable gdm
 
 echo -e "\nDone!\n"
